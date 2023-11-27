@@ -2,18 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.Audio;
 
 public class Test : MonoBehaviour
 {
     // Start is called before the first frame update
     public VideoPlayer videoPlayer;
     public AudioSource audioSource;
-    public Animator animator = null;
-    public float thresholdVolume = 0.1f;
-    public bool animationPlaying = false;
-    //private bool Bool = false;
+    public Animator animator;
+    public float thresholdVolume = -20.0f;
+    //public bool animationPlaying = false;
+    private bool Bool = false;
     private const int SampleCount = 1024;
-    private float[] _samples = new float[SampleCount];
+    private float[] samples = new float[SampleCount];
+    private AudioMixer audioMixer;
+    private float volume;
+    private float currentVolume = -1.0f;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -23,23 +27,48 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         // 音量をデシベル単位で取得
-        var db = CalcDecibel();
+        //var db = CalcDecibel();
 
+         //if (db > thresholdVolume)
+        // {
+             //animator.SetBool("animationPlaying",true);
+            // animator.SetBool("Bool", true);
+         //}
+        // else if(db <= thresholdVolume)
+        // {
+             //animator.SetBool("animationPlaying", false);
+            // animator.SetBool("Bool", false);
+
+        // }
+        //var db = VolumeCLK();
+        /*audioMixer.GetFloat("BGMVolume", out volume);
+        var db = volume;
         if (db > thresholdVolume)
         {
-            animator.SetBool("animationPlaying",true);
-            //animator.SetBool("Bool", true);
+            //animator.SetBool("animationPlaying",true);
+            animator.SetBool("Bool", true);
         }
-        else if(db <= thresholdVolume)
+        else if (db <= thresholdVolume)
         {
-            animator.SetBool("animationPlaying", false);
-        }
+            //animator.SetBool("animationPlaying", false);
+            animator.SetBool("Bool", false);
+        }*/
 
     }
 
-    private float CalcDecibel()
+    //private float VolumeCLK()
+    //{
+        //if (Mathf.Approximately(currentVolume, volume))
+
+        // AudioMixer.SetFloat で Exposed Parameter を設定する
+        //audioMixer.GetFloat("BGMVolume", out volume);
+        //currentVolume = volume;
+       // return volume;
+        //Debug.Log("Current Volume: " + currentVolume + " dB");
+   // }
+
+    /*private float CalcDecibel()
     {
         audioSource.GetOutputData(_samples, 0);
 
@@ -53,5 +82,5 @@ public class Test : MonoBehaviour
             dbValue = -80.0f;
 
         return dbValue;
-    }
+    }*/
 }
