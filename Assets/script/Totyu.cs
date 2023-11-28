@@ -33,11 +33,17 @@ public class Totyu : MonoBehaviour
             amplitude /= data.Length;
             var db = 20.0f * Mathf.Log10(amplitude);
             Debug.Log(db);
-
+            int hashRandom = Animator.StringToHash("random");
+            animator.SetInteger(hashRandom, Random.Range(0, 4));
             if (db > -20.0f)
             {
                 animator.SetBool("Bool", true);
-            }else if (db <= -20.0f)
+                /*int min = 0;
+                int max = 4;
+                int random = Random.Range(min, max);
+                */
+            }
+            else if (db <= -20.0f)
             {
                 animator.SetBool("Bool", false);
             }
