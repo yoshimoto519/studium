@@ -44,7 +44,7 @@ public class AnimationContTest : MonoBehaviour
             Debug.Log(db);
             //int hashRandom = Animator.StringToHash("random");
             //animator.SetInteger(hashRandom, Random.Range(0, 4));
-            if (db > -15.0f)
+            if (db > -23.0f)
             {
                 int hashRandom = Animator.StringToHash("random");
                 animator.SetInteger(hashRandom, Random.Range(0, 4));
@@ -59,7 +59,7 @@ public class AnimationContTest : MonoBehaviour
                 int random = Random.Range(min, max);
                 */
             }
-            else if (db <= -15.0f && animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1f)
+            else if (db <= -23.0f && animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1f)
             {
                 animator.SetBool("Bool", false);
             }
