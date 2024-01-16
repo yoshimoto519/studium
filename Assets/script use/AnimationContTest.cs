@@ -8,9 +8,11 @@ public class AnimationContTest : MonoBehaviour
     public VideoPlayer videoPlayer;
     public AudioSource audioSource = null;
     public Animator animator;
+    private float threshold = -25.0f;
     private bool Bool = false;
     private const int sample = 1024;
     private float[] data = new float[sample];
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,24 +46,20 @@ public class AnimationContTest : MonoBehaviour
             Debug.Log(db);
             //int hashRandom = Animator.StringToHash("random");
             //animator.SetInteger(hashRandom, Random.Range(0, 4));
-            if (db > -23.0f)
+            if (db > threshold)
             {
-                int hashRandom = Animator.StringToHash("random");
-                animator.SetInteger(hashRandom, Random.Range(0, 4));
                 animator.SetBool("Bool", true);
-                /*if(db <= -15.0 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1f)
-                {
-                    animator.SetBool("Bool", false);
-                }*/
-
+                int hashRandom = Animator.StringToHash("random");
+                animator.SetInteger(hashRandom, Random.Range(0, 6));
                 /*int min = 0;
                 int max = 4;
                 int random = Random.Range(min, max);
                 */
+                
             }
-            else if (db <= -23.0f && animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1f)
+            else if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1f && db <= threshold )
             {
-                animator.SetBool("Bool", false);
+               animator.SetBool("Bool", false);
             }
         }
     }
