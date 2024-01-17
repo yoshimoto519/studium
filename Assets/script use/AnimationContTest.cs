@@ -8,7 +8,7 @@ public class AnimationContTest : MonoBehaviour
     public VideoPlayer videoPlayer;
     public AudioSource audioSource = null;
     public Animator animator;
-    private float threshold = -25.0f;
+    private float threshold = -24.0f;
     private bool Bool = false;
     private const int sample = 1024;
     private float[] data = new float[sample];
@@ -17,13 +17,13 @@ public class AnimationContTest : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        // videoPlayer‚ªÄ¶’†‚È‚çaudioSource‚ğæ“¾
+        // videoPlayerï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ï¿½È‚ï¿½audioSourceï¿½ï¿½ï¿½æ“¾
         if (videoPlayer.isPlaying)
         {
             audioSource = GetComponent<AudioSource>();
         }
 
-        // audioSource‚ªæ“¾‚Å‚«‚È‚¢ê‡‚ÍƒGƒ‰[‚ğo—Í
+        // audioSourceï¿½ï¿½ï¿½æ“¾ï¿½Å‚ï¿½ï¿½È‚ï¿½ï¿½ê‡ï¿½ÍƒGï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½oï¿½ï¿½
         if (audioSource == null)
         {
             Debug.LogError("AudioSource not found.");

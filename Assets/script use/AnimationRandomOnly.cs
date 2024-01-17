@@ -23,7 +23,7 @@ public class AnimationRandomOnly : MonoBehaviour
         if (videoPlayer.isPlaying)
         {
             int hashRandom = Animator.StringToHash("random");
-            animator.SetInteger(hashRandom, Random.Range(0, 5));
+            animator.SetInteger(hashRandom, Random.Range(0, 6));
             animator.SetBool("Bool", true);
         }
     }

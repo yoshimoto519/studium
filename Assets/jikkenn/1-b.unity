@@ -433,6 +433,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7899583183492811408, guid: ba460e14d540bf348b162f88abe584bd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 315
+      objectReference: {fileID: 0}
+    - target: {fileID: -7899583183492811408, guid: ba460e14d540bf348b162f88abe584bd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: -7899583183492811408, guid: ba460e14d540bf348b162f88abe584bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ba460e14d540bf348b162f88abe584bd, type: 3}
       propertyPath: m_Name
       value: "\u30B9\u30BF\u30B8\u30A2\u30E0\u30C6\u30AF\u30B9\u30C1\u30E3\u8CBC\u308A\u4ED8\u3051AI\u751F\u6210\u753B\u50CF\u30B9\u30B1\u30FC\u30EB\u6574\u3048
@@ -788,7 +800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997944597574363764}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 15, z: 0}
+  m_LocalPosition: {x: 0, y: 8, z: 0}
   m_LocalScale: {x: 5.3333335, y: 1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -939,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3768fe280903842fdaa2a016022624f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://www.youtube.com/watch?v=ilcQI4Xe8ro
+  youtubeUrl: https://www.youtube.com/watch?v=ZiMTmXWdiRY
   is360Video: 0
   cli: 1
 --- !u!33 &5711890242835956008
