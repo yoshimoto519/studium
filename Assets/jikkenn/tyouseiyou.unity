@@ -826,6 +826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1080679104690966188}
   - component: {fileID: 9209477276908219011}
+  - component: {fileID: 9209477276908219013}
   - component: {fileID: 3194398954840042727}
   - component: {fileID: 2172520653897420042}
   - component: {fileID: 9209477276908219012}
@@ -959,7 +960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3768fe280903842fdaa2a016022624f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://www.youtube.com/watch?v=vMOotwzByNw
+  youtubeUrl: https://www.youtube.com/watch?v=ilcQI4Xe8ro
   is360Video: 0
   cli: 1
 --- !u!33 &5711890242835956008
@@ -1044,3 +1045,17 @@ MonoBehaviour:
   skipKey: 32
   pauseKey: 13
   skipDuration: 30
+--- !u!114 &9209477276908219013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997944597574363764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ead6101f082a3b4697f1af224c70cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 9209477276908219011}
+  audioSource: {fileID: 2172520653897420042}
