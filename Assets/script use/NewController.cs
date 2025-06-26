@@ -8,7 +8,7 @@ public class NewController : MonoBehaviour
     public AudioSource audioSource;
     public Animator animator;
 
-    private const float threshold = -24.0f;
+    private const float threshold = -23.0f;
     private const int sample = 1024;
     private float[] data = new float[sample];
 

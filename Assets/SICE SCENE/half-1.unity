@@ -33587,7 +33587,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e1170b0ccd40a0e478e6ee8a332e1777, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1170b0ccd40a0e478e6ee8a332e1777, type: 3}
       propertyPath: m_LocalScale.y
@@ -33599,7 +33599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1170b0ccd40a0e478e6ee8a332e1777, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7859573
+      value: -2.284
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1170b0ccd40a0e478e6ee8a332e1777, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40200,7 +40200,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e1170b0ccd40a0e478e6ee8a332e1777, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1170b0ccd40a0e478e6ee8a332e1777, type: 3}
       propertyPath: m_LocalScale.y
@@ -40212,7 +40212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1170b0ccd40a0e478e6ee8a332e1777, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2969551
+      value: -0.782
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1170b0ccd40a0e478e6ee8a332e1777, type: 3}
       propertyPath: m_LocalPosition.y
@@ -75839,8 +75839,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 317239801}
-  - {fileID: 2047718975}
   - {fileID: 758745947}
+  - {fileID: 2047718975}
   - {fileID: 639207452}
   - {fileID: 2056451143}
   - {fileID: 1826144696}
@@ -106737,7 +106737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3768fe280903842fdaa2a016022624f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  youtubeUrl: https://www.youtube.com/watch?v=mnDDzp1q-mc
+  youtubeUrl: https://www.youtube.com/watch?v=NMfDrwz-Njk
   is360Video: 0
   cli: 1
 --- !u!33 &5711890242835956008
